@@ -1,8 +1,7 @@
 
-package Tienda_Steven.demo.service;
+package Tienda_STEVEN.demo.service;
 
 import org.springframework.web.multipart.MultipartFile;
-
 
 public interface FirebaseStorageService {
     public String cargaImagen(MultipartFile archivoLocalCliente, String carpeta, Long id);
@@ -14,5 +13,5 @@ public interface FirebaseStorageService {
     final String rutaJsonFile = "firebase";
     
     //El nombre del archivo Json
-    final String archivoJsonFile = "techshop-StevenAlpizar-firebase-adminsdk-sgpf3-bf9e711a54.json";
+    final String archivoJsonFile = "techshop-josuevalverde-firebase-adminsdk-sgpf3-bf9e711a54.json";
 }

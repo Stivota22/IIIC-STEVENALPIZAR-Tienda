@@ -1,17 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
-package Tienda_Steven.demo.service;
 
-import Tienda_Steven.demo.domain.Categoria;
+package Tienda_STEVEN.demo.service;
+//imports de la clase
+import Tienda_STEVEN.demo.domain.Categoria;
 import java.util.List;
 
-/**
- *
- * @author Usuario
- */
 public interface CategoriaService {
+    
     public List <Categoria> getCategorias(boolean activos);
     
     // Se obtiene un Categoria, a partir del id de un categoria
@@ -23,4 +17,5 @@ public interface CategoriaService {
     
     // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Categoria categoria);
-}
+    
+}// Fin de la clase

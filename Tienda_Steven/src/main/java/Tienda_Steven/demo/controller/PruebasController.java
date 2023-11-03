@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Tienda_Steven.demo.controller;
 
-import Tienda_Steven.demo.domain.Categoria;
-import Tienda_Steven.demo.service.CategoriaService;
-import Tienda_Steven.demo.service.ProductoService;
+package Tienda_STEVEN.demo.controller;
+
+import Tienda_STEVEN.demo.domain.Categoria;
+import Tienda_STEVEN.demo.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import Tienda_STEVEN.demo.service.ProductoService;
 
-/**
- *
- * @author Usuario
- */
+
+@Controller
+@RequestMapping("/pruebas")
 public class PruebasController {
     @Autowired
     private ProductoService productoService;

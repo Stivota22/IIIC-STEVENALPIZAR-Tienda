@@ -1,14 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
-package Tienda_Steven.demo.service;
 
-import Tienda_Steven.demo.domain.Producto;
+package Tienda_STEVEN.demo.service;
+
+import Tienda_STEVEN.demo.domain.Producto;
 import java.util.List;
 
-
 public interface ProductoService {
+    
     public List <Producto> getProductos(boolean activos);
     
     // Se obtiene un Producto, a partir del id de un producto
@@ -19,5 +16,5 @@ public interface ProductoService {
     public void save(Producto producto);
     
     // Se elimina el producto que tiene el id pasado por parámetro
-    public void delete(Producto producto);   
+    public void delete(Producto producto);    
 }

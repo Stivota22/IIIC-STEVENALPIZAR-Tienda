@@ -1,6 +1,6 @@
 
-package Tienda_Steven.demo.domain;
-
+package Tienda_STEVEN.demo.domain;
+//Imports de la clase
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -10,7 +10,8 @@ import lombok.Data;
 @Entity
 @Table(name="categoria")
 public class Categoria implements Serializable {
-     private static final long serialVersionUID = 1L;
+    
+    private static final long serialVersionUID = 1L;
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,5 +32,3 @@ public class Categoria implements Serializable {
         this.activo = activo;
     }
 }//Fin de la clase
-
-

@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Tienda_Steven.demo.controller;
 
-import Tienda_Steven.demo.domain.Producto;
-import Tienda_Steven.demo.service.CategoriaService;
-import Tienda_Steven.demo.service.ProductoService;
-import Tienda_Steven.demo.service.impl.FirebaseStorageServiceImpl;
+package Tienda_STEVEN.demo.controller;
+
+import Tienda_STEVEN.demo.domain.Producto;
+import Tienda_STEVEN.demo.service.CategoriaService;
+import Tienda_STEVEN.demo.service.ProductoService;
+import Tienda_STEVEN.demo.service.impl.FirebaseStorageServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,11 +13,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-
 @Controller
 @RequestMapping("/producto")
 public class ProductoController {
-     @Autowired
+  
+    @Autowired
     private ProductoService productoService;
     @Autowired
     private CategoriaService categoriaService;

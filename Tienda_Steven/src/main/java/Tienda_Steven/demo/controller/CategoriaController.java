@@ -1,12 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Tienda_Steven.demo.controller;
 
-import Tienda_Steven.demo.domain.Categoria;
-import Tienda_Steven.demo.service.CategoriaService;
-import Tienda_Steven.demo.service.impl.FirebaseStorageServiceImpl;
+package Tienda_STEVEN.demo.controller;
+//implements
+import Tienda_STEVEN.demo.domain.Categoria;
+import Tienda_STEVEN.demo.service.CategoriaService;
+import Tienda_STEVEN.demo.service.impl.FirebaseStorageServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,7 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
 @Slf4j
 @RequestMapping("/categoria")
 public class CategoriaController {
-      @Autowired
+    
+    @Autowired
     private CategoriaService categoriaService;
     @GetMapping("/listado")
     public String inicio(Model model) {
@@ -64,4 +62,3 @@ public class CategoriaController {
         return "/categoria/modifica";
     }
 }//Fin de la clase
-

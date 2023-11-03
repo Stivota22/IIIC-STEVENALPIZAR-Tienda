@@ -1,5 +1,5 @@
 
-package Tienda_Steven.demo.domain;
+package Tienda_STEVEN.demo.domain;
 
 import jakarta.persistence.*;
 import java.io.Serializable;
@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name="producto")
-public class Producto {
+public class Producto implements Serializable {
     private static final long serialVersionUID = 1L;
     
     @Id
